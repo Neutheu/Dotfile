@@ -1,0 +1,10 @@
+-name: Test
+  hosts: localhost
+
+  tasks:
+  -name: install zsh
+  become: yes
+  ansible.builtin.apt:
+    name:
+    - zsh -y
+    state: present

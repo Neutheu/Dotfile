@@ -6,5 +6,5 @@
       become: yes
       ansible.builtin.apt:
         name:
-          - zsh -y
+          - zsh
         state: present
